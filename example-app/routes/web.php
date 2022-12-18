@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dorsz/305357/people', function () {
+    return ('bylem_tu');
+});
+Route::get('people', [PeopleController::class; 'index']);
+Route::get('people/{people}', [PeopleController::class; 'show']);
+
